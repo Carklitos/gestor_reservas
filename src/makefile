@@ -1,7 +1,7 @@
 CXX ?= g++
 CXXFLAGS ?= -Wall -Wextra -std=c++11
 
-TARGET := gestor_reservas
+TARGET := main
 SOURCES := main.cc banner.cc
 OBJECTS := $(SOURCES:.cc=.o)
 

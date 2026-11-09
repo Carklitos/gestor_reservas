@@ -13,13 +13,11 @@ void banner() {
 }
 
 void time_table() {
+  cout << endl;
   ifstream config("config.txt");
   if (!config.is_open()) {
     cerr << "no se pudo abrir config.txt" << endl;
   }
-
-  cout << "======================================= \n";
-  cout << "                HORARIO                     \n";
   
   string day;
   int open, close;
@@ -32,5 +30,4 @@ void time_table() {
       cout << open << ":00 - " << close << ":00" << endl; 
     }
   }
-  cout << "======================================= \n";
 }
